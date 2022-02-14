@@ -48,9 +48,9 @@ ul {
 
 .button {
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-
-    border-color: transparent;
+    font-family: var(--main-font-style);
+    
+    border: none;
 }
 
 img {
@@ -83,10 +83,11 @@ img {
 
 .header {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
+
 .header-content {
     display: flex;
     align-items: center;
@@ -188,8 +189,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1600px;
-    height: 600px;
+    padding: 200px 0;
     margin: 0 auto;
 
     text-align: center;
@@ -213,15 +213,17 @@ img {
 
 
 .intro-btn {
+    min-width: 200px;
     padding: 10px 32px;
 
     font-weight: 700;
     font-size: var(--font-size-medium);
-    line-height: 1.87;
+    line-height: 1.875;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
 
     background-color: var(--accent-color);
+    border:none;
     border-radius: 4px;
 }
 
@@ -310,13 +312,19 @@ img {
 .team-item {
     width: calc((100% -3 * 30px )/ 4);
     margin-right: 30px;
-    padding-bottom: 30px;
 
     text-align: center;
 
     background-color: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-item:last-of-type {
+    margin-right: 0;
+}
+
+.team-item-wrapper{
+    padding: 30px 0;
 }
 
 .team-title {
@@ -326,10 +334,6 @@ img {
     line-height: 1.18;
     font-weight: 500;
 
-}
-
-.team-img {
-    margin-bottom: 30px;
 }
 
 .team-prof {
@@ -585,9 +589,8 @@ margin-right: 8px;
 .portfolio-body {
     padding: 20px 24px;
 
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-item:nth-of-type(3n) {
