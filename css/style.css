@@ -144,7 +144,7 @@ img {
 
 .nav-link{
     display: inline-block;
-    padding: 24px 0;
+    padding: 32px 0;
 }
 
 .nav-link:hover,
@@ -188,6 +188,7 @@ img {
     align-items: center;
     padding: 200px 0;
     margin: 0 auto;
+    max-width: 1600px;
 
     text-align: center;
 
@@ -195,7 +196,7 @@ img {
     background-image:linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/intro-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: cover;
 }
 
 .intro-header {
@@ -249,8 +250,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 270px;
+    height: 120px;
     margin-bottom: 30px;
-    padding: 25px 0;
 
     background-color: var(--secondary-grey-color);
     border-radius: 4px;
@@ -369,6 +371,11 @@ img {
 
 .team-socials-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .team-socials-item:hover,
@@ -394,15 +401,16 @@ img {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .adress-wrapper {
     margin-right: 70px;
 }
 
-.join-wrapper {
+/* .join-wrapper {
     padding-top: 12px;
-}
+} */
 
 .join-header {
     margin-bottom: 20px;
@@ -443,6 +451,10 @@ img {
 
 .join-socials-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .join-socials-item:hover,
@@ -503,6 +515,14 @@ img {
     cursor: pointer;
 }
 
+.customers-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .customers-item:hover,
 .customers-item:focus {
     border-color: var(--accent-color);
@@ -520,6 +540,7 @@ img {
 .customers-item:focus  .customers-svg {
     fill: var(--accent-color);
 }
+
 /* portfolio */
 
 .portfolio-list {
@@ -580,14 +601,15 @@ margin-right: 8px;
     cursor: pointer;
 }
 
-.portfolio-item:focus,
-.portfolio-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-link {
+    display: block;
     color: var(--title-text-color);
     text-decoration: none;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-body {
